@@ -1,9 +1,9 @@
 name: "CheckoutRepoGit"
 description: | 
-  "This action builds, test and deploy a Node.js app to Azure."
+  "Es un actions para hacer un checkout de cualquier repo git solo se requiere usuario y contraseña"
 branding:
-  icon: 'shield'
-  color: 'blue'
+  icon: 'check-circle'
+  color: 'green'
 inputs:
   node-version:
     description: 'The version of Node.js to use for building and testing.'
