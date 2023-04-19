@@ -16,5 +16,5 @@ inputs:
 runs:
   using: 'composite'
   steps:
-    - run: git clone https://${{ vars.USER_REPO_API_SAMPLE_ANTHONY }}:${{ secrets.PASSREPO_API_SAMPLE_ANTHONY }}@gitlab.com/${{ github.event.inputs.repository }}/${{ github.event.inputs.password }}.git
+    - run: git clone https://${{ vars.USER_REPO_API_SAMPLE_ANTHONY }}:${{ secrets.PASSREPO_API_SAMPLE_ANTHONY }}@Labs-DevOps@dev.azure.com/Labs-DevOps/CHL2TMP001/_git/CHL2TMP001_MULTIBRANCH
       shell: bash
