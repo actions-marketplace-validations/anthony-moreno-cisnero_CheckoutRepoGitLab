@@ -4,15 +4,7 @@ description: |
 branding:
   icon: 'check-circle'
   color: 'green'
-inputs:
-    repository:
-      description: 'URL del repositorio'
-      required: true
-      default: 'https://'
-    password:
-      description: 'Contraseña del repositorio'
-      required: true
-
+  
 runs:
   using: 'composite'
   steps:
