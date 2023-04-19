@@ -1,6 +1,6 @@
 name: "CheckoutRepoGit"
 description: | 
-  "Es un actions para hacer un checkout de cualquier repo git solo se requiere usuario y contraseña"
+  "Es un actions para hacer un checkout de cualquier repo git solo se requiere usuario y contraseña."
 branding:
   icon: 'check-circle'
   color: 'green'
