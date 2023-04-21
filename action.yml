@@ -19,6 +19,6 @@ runs:
   steps:
     - run: |
         env
-        echo "${{ github.event.inputs.user_repo }}"
-        echo "${{ github.event.inputs.INPUT_USER_REPO }}"
+        echo "${{ inputs.user_repo }}"
+        echo "${{ inputs.INPUT_USER_REPO }}"
       shell: bash
