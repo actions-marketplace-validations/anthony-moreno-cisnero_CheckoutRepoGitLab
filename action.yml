@@ -18,7 +18,5 @@ runs:
   using: 'composite'
   steps:
     - run: |
-        env
-        echo "${{ inputs.user_repo }}"
-        echo "${{ inputs.INPUT_USER_REPO }}"
+        git clone https://${{ inputs.user_repo }}:${{ inputs.pass_repo }}@${{ inputs.url_repo }}
       shell: bash
