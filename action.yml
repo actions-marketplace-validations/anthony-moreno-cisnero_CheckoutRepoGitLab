@@ -9,8 +9,5 @@ runs:
   using: 'composite'
   steps:
     - run: |
-        export AC_USER_REPO
-        export AC_PASS_REPO
-        export AC_URL_REPO
         git clone https://$AC_USER_REPO:$AC_PASS_REPO@$AC_URL_REPO
       shell: bash
