@@ -21,4 +21,5 @@ runs:
     - run: |
         echo $INPUT_VAR1
         echo $INPUT_VAR2
+        env
       shell: bash
