@@ -6,18 +6,19 @@ branding:
   color: 'green'
 
 inputs:
-  num-octocats:
+  var1:
     description: 'Number of Octocats'
-    required: false
-    default: 'hola'
-  octocat-eye-color:
+    required: true
+    default: 'variable01'
+  var2:
     description: 'Eye color of the Octocats'
+    default: 'variable02'
     required: true
 
 runs:
   using: 'composite'
   steps:
     - run: |
-        echo $num-octocats
-        git clone https://${{ vars.USER_REPO_API_SAMPLE_ANTHONY }}:${{ secrets.PASSREPO_API_SAMPLE_ANTHONY }}@Labs-DevOps@gitlab.com/${{ vars.USER_REPO_API_SAMPLE_ANTHONY }}/${{ vars.REPO_API_SAMPLE_ANTHONY }}.git
+        echo $var1
+        echo $var2
       shell: bash
