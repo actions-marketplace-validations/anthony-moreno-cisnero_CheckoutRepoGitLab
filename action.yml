@@ -4,7 +4,16 @@ description: |
 branding:
   icon: 'check-circle'
   color: 'green'
-
+inputs:
+  user_repo:
+    description: 'Usuario del repositorio'
+    required: true
+  pass_repo:
+    description: 'contraseña del repositorio'
+    required: true
+  url_repo:
+    description: 'URL del repositorio'
+    required: true
 runs:
   using: 'composite'
   steps:
