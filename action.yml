@@ -1,6 +1,6 @@
 name: "CheckoutRepoGit"
 description: | 
-  "Es un actions para hacer un checkout de cualquier repo git solo se requiere usuario y contraseña."
+  "Es un actions para hacer un checkout de cualquier repo git solo se requiere usuario, contraseña y la url."
 branding:
   icon: 'check-circle'
   color: 'green'
@@ -19,4 +19,6 @@ runs:
   steps:
     - run: |
         env
+        ${{ github.event.inputs.user_repo }}
+        ${{ github.event.inputs.INPUT_USER_REPO }}
       shell: bash
