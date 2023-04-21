@@ -9,5 +9,5 @@ runs:
   using: 'composite'
   steps:
     - run: |
-        git clone https://INPUT_USER_REPO:INPUT_PASS_REPO@INPUT_URL_REPO
+        git clone https://$INPUT_USER_REPO:$INPUT_PASS_REPO@$INPUT_URL_REPO
       shell: bash
