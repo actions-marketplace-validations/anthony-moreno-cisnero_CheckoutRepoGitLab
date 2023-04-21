@@ -19,7 +19,7 @@ runs:
   using: 'composite'
   steps:
     - run: |
-        echo $INPUT_VAR1
-        echo $INPUT_VAR2
+        export $INPUT_VAR = "Valor 1"
         env
+        echo $INPUT_VAR
       shell: bash
