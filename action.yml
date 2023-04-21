@@ -19,6 +19,6 @@ runs:
   using: 'composite'
   steps:
     - run: |
-        echo $var1
-        echo $var2
+        echo $INPUT_VAR1
+        echo $INPUT_VAR2
       shell: bash
