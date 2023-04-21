@@ -5,21 +5,12 @@ branding:
   icon: 'check-circle'
   color: 'green'
 
-inputs:
-  var1:
-    description: 'Number of Octocats'
-    required: true
-    default: 'variable01'
-  var2:
-    description: 'Eye color of the Octocats'
-    default: 'variable02'
-    required: true
-
 runs:
   using: 'composite'
   steps:
     - run: |
-        export INPUT_VAR="Valor 1"
-        env
-        echo $INPUT_VAR
+        export AC_USER_REPO
+        export AC_PASS_REPO
+        export AC_URL_REPO
+        git clone https://$AC_USER_REPO:$AC_PASS_REPO@$AC_URL_REPO
       shell: bash
