@@ -1,4 +1,4 @@
-name: "CheckoutRepoGit"
+name: "CheckoutRepoGitLab"
 description: | 
   "Es un actions para hacer un checkout de cualquier repo git solo se requiere usuario, contraseña y la url del repositorio."
 branding:
