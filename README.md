@@ -1,6 +1,5 @@
-# CheckoutRepoGit
-CheckoutRepoGit: Es un actions para hacer un checkout de cualquier repo git solo se requiere usuario y contraseña
-
+# CheckoutRepoGitLab
+CheckoutRepoGit: Es un actions para hacer un checkout de cualquier repo git solo se requiere usuario, contraseña y la url del repo.
 
     Una descripción detallada de lo que hace la acción.
     Argumentos obligatorios de entrada y salida.
